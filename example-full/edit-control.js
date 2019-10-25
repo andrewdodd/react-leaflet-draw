@@ -75,7 +75,8 @@ export default class EditControlExample extends Component {
   }
 
   _getHighestId = () => {
-    return Math.max(...this.state.elementsById.keys())
+    // Include 0 to make sure we always have a valid id
+    return Math.max(0, ...this.state.elementsById.keys())
   }
 
   _handleCreated = evt => {
