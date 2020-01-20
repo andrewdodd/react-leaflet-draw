@@ -4,8 +4,6 @@ This is a fork of [React-Leaflet-Draw](https://github.com/alex3165/react-leaflet
 
 This fork is mainly to provide an alternative [MapControl](https://react-leaflet.js.org/docs/en/components.html#mapcontrol) component that more plainly wraps the Leafet.draw control and does not provide its own internal [FeatureGroup](https://react-leaflet.js.org/docs/en/components.html#featuregroup). I implemented this, as the existing control did not work well with the redux store I was using for state. It also provides a component that has its own internal FeatureGroup for convenience.
 
-This repo will not be maintained (I really don't have the time). I provide it as a convenience and as a guide.
-
 **NB:** If the original repo wants to incorporate these changes, that's fine by me, but I think that given the tradeoff between the size of this code and the potential to break the existing client code it is probably easier to just copy-paste this code if you need it (or use the `@andrewdodd/react-leaflet-draw` dep instead).
 
 ## Install
